@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prices - RML Barbershop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="light">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="logo.jfif" alt="RML Barbershop logo"></span><span class="brand-name">Barbershop</span></a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a><a href="about.html">About</a><a href="prices.html">Prices</a><a href="contact.html">Contact</a><a href="login.html">Log In</a><a class="button button-primary" href="login.html">Book Now</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section center">
+        <p class="eyebrow">Services and rates</p>
+        <h1>Choose your next look.</h1>
+        <p>Tap a category to compare popular RML services and starting prices.</p>
+        <div class="service-tabs" aria-label="Service categories">
+          <button class="service-tab active" type="button" data-service="haircuts">Haircuts</button>
+          <button class="service-tab" type="button" data-service="braids">Braids</button>
+          <button class="service-tab" type="button" data-service="styling">Styling</button>
+          <button class="service-tab" type="button" data-service="color">Hair Dye</button>
+        </div>
+      </section>
+
+      <section class="section service-section" id="haircuts">
+        <h2>Haircuts</h2>
+        <div class="service-grid">
+          <article class="service-box"><div class="service-img"><img src="classic.jfif" alt="Classic Cut"></div><span class="price">P180</span><h3>Classic Cut</h3><p>Clean scissor or clipper cut with neckline finish.</p></article>
+          <article class="service-box"><div class="service-img"><img src="fade.jpg" alt="Fade Cut"></div><span class="price">P220</span><h3>Fade Cut</h3><p>Low, mid, or high fade blended to your preferred style.</p></article>
+          <article class="service-box"><div class="service-img"><img src="clean.jpg" alt="Cut and Beard"></div><span class="price">P250</span><h3>Cut + Beard</h3><p>Haircut with beard trim, line-up, and detail work.</p></article>
+          <article class="service-box"><div class="service-img"><img src="kids.jpg" alt="Kids Cut"></div><span class="price">P120</span><h3>Kids Cut</h3><p>Fast and tidy cuts for younger clients.</p></article>
+        </div>
+      </section>
+
+      <section class="section service-section" id="braids" hidden>
+        <h2>Braids</h2>
+        <div class="service-grid">
+          <article class="service-box"><div class="service-img"><img src="basic.jfif" alt="Basic Braids"></div><span class="price">P500</span><h3>Basic Braids</h3><p>Simple clean braid style with neat sectioning.</p></article>
+          <article class="service-box"><div class="service-img"><img src="pattern.jfif" alt="Pattern Braids"></div><span class="price">P750</span><h3>Pattern Braids</h3><p>Detailed designs for a stronger custom look.</p></article>
+          <article class="service-box"><div class="service-img"><img src="fresh.jfif" alt="Braid Refresh"></div><span class="price">P350</span><h3>Braid Refresh</h3><p>Touch-up service to tidy existing braids.</p></article>
+        </div>
+      </section>
+
+      <section class="section service-section" id="styling" hidden>
+        <h2>Styling</h2>
+        <div class="service-grid">
+          <article class="service-box"><div class="service-img"><img src="wash.jfif" alt="Wash and Style"></div><span class="price">P150</span><h3>Wash + Style</h3><p>Cleanse, product finish, and shape for the day.</p></article>
+          <article class="service-box"><div class="service-img"><img src="hot.jfif" alt="Hot Towel Shave"></div><span class="price">P300</span><h3>Hot Towel Shave</h3><p>Relaxing towel prep with razor finish.</p></article>
+          <article class="service-box"><div class="service-img"><img src="style.avif" alt="Event Styling"></div><span class="price">P400</span><h3>Event Styling</h3><p>Detailed grooming for photos, work, and occasions.</p></article>
+        </div>
+      </section>
+
+      <section class="section service-section" id="color" hidden>
+        <h2>Hair Dye</h2>
+        <div class="service-grid">
+          <article class="service-box"><div class="service-img"><img src="single.jfif" alt="Single Color"></div><span class="price">P600</span><h3>Single Color</h3><p>Full color application with consultation.</p></article>
+          <article class="service-box"><div class="service-img"><img src="high.jfif" alt="Highlights"></div><span class="price">P900</span><h3>Highlights</h3><p>Accent color for dimension and contrast.</p></article>
+          <article class="service-box"><div class="service-img"><img src="creative.jfif" alt="Creative Color"></div><span class="price">P1200</span><h3>Creative Color</h3><p>Bold color work priced after consultation.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>Visit RML Barbershop</strong><p>Fresh cuts. Friendly service.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="prices.html">Prices</a><a href="contact.html">Contact</a></div>
+    </footer>
+  </div>
+</body>
+</html>

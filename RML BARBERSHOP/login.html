@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In - RML Barbershop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="light">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="logo.jfif" alt="RML Barbershop logo"></span><span class="brand-name">Barbershop</span></a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a><a href="about.html">About</a><a href="prices.html">Prices</a><a href="contact.html">Contact</a><a href="login.html">Log In</a><a class="button button-primary" href="login.html">Book Now</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Account access</p>
+          <h1>Welcome back.</h1>
+          <div class="auth-card">
+            <form data-login-form>
+              <label>Username <input type="text" name="username" placeholder="Enter username" required></label>
+              <label>Password <input type="password" name="password" placeholder="Enter password" required></label>
+              <button type="submit" class="button button-primary">Log In</button>
+            </form>
+            <p class="form-message" data-login-message></p>
+            <div class="demo-accounts">
+              <strong>Demo accounts</strong>
+              <span>user / user123</span>
+              <span>staff / staff123</span>
+              <span>superadmin / super123</span>
+            </div>
+            <div class="auth-links">
+              <a href="#">Forgot Password?</a>
+              <a href="signup.html">Create Account</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="chai.jfif" alt="Barbershop tools and chair">
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>Visit RML Barbershop</strong><p>Fresh cuts. Friendly service.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="prices.html">Prices</a><a href="contact.html">Contact</a></div>
+    </footer>
+  </div>
+</body>
+</html>

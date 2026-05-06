@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - RML Barbershop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="light">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="logo.jfif" alt="RML Barbershop logo"></span><span class="brand-name">Barbershop</span></a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a><a href="about.html">About</a><a href="prices.html">Prices</a><a href="contact.html">Contact</a><a href="login.html">Log In</a><a class="button button-primary" href="login.html">Book Now</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Contact</p>
+          <h1>Ready for your next cut?</h1>
+          <p>Message us, call ahead, or visit during shop hours. Appointments are recommended for faster service.</p>
+          <div class="info-grid">
+            <div class="card"><h3>Address</h3><p>123 Main St, City, State 12345</p></div>
+            <div class="card"><h3>Phone</h3><p>(123) 456-7890</p></div>
+            <div class="card"><h3>Email</h3><p>info@rmlbarbershop.com</p></div>
+            <div class="card"><h3>Hours</h3><p>Mon-Fri 9am-7pm<br>Sat 8am-5pm<br>Sun Closed</p></div>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <h2>Send a Message</h2>
+          <form class="form-grid">
+            <label>Name <input type="text" name="name" placeholder="Your name"></label>
+            <label>Email <input type="email" name="email" placeholder="you@example.com"></label>
+            <label>Message <textarea name="message" placeholder="How can we help?"></textarea></label>
+            <button class="button button-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>Visit RML Barbershop</strong><p>Fresh cuts. Friendly service.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="prices.html">Prices</a><a href="contact.html">Contact</a></div>
+    </footer>
+  </div>
+</body>
+</html>

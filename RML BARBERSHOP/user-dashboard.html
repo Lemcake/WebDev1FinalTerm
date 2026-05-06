@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard - RML Barbershop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="light">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="logo.jfif" alt="RML Barbershop logo"></span><span class="brand-name">Barbershop</span></a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="User navigation">
+          <a href="user-status.html">Status</a><a href="user-services.html">Services</a><a href="book.html">Book Now</a><a href="user-profile.html">Profile</a><a href="login.html" data-logout>Log Out</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <p class="eyebrow">Customer dashboard</p>
+        <h1>Welcome back.</h1>
+        <p>Manage appointments, update your profile, or reserve your next service.</p>
+        <div class="dashboard-actions">
+          <a class="button button-secondary button-square" href="user-status.html">View Status</a>
+          <a class="button button-secondary button-square" href="user-profile.html">Edit Profile</a>
+          <a class="button button-accent button-square" href="book.html">Book New Appointment</a>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Recent Appointments</h2>
+        <div class="notice-card"><p>No appointments scheduled yet.</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>Visit RML Barbershop</strong><p>Fresh cuts. Friendly service.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="prices.html">Prices</a><a href="contact.html">Contact</a></div>
+    </footer>
+  </div>
+</body>
+</html>

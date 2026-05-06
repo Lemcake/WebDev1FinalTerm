@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now - RML Barbershop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="light">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="logo.jfif" alt="RML Barbershop logo"></span><span class="brand-name">Barbershop</span></a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="User navigation">
+          <a href="user-status.html">Status</a><a href="user-services.html">Services</a><a href="book.html">Book Now</a><a href="user-profile.html">Profile</a><a href="login.html" data-logout>Log Out</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Appointment</p>
+          <h1>Book your next visit.</h1>
+          <p>Choose your service, barber, date, and preferred time. This static form is ready for your backend or JavaScript booking logic.</p>
+        </div>
+        <div class="hero-copy">
+          <form class="form-grid">
+            <label>Service
+              <select name="service">
+                <option>Fade Cut</option>
+                <option>Classic Cut</option>
+                <option>Cut + Beard</option>
+                <option>Braids</option>
+                <option>Hair Dye</option>
+              </select>
+            </label>
+            <label>Preferred Barber <input type="text" name="barber" placeholder="Any barber"></label>
+            <label>Date <input type="date" name="date"></label>
+            <label>Time <input type="time" name="time"></label>
+            <button class="button button-primary" type="submit">Request Booking</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>Visit RML Barbershop</strong><p>Fresh cuts. Friendly service.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="prices.html">Prices</a><a href="contact.html">Contact</a></div>
+    </footer>
+  </div>
+</body>
+</html>
