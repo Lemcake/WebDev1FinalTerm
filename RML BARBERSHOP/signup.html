@@ -28,13 +28,15 @@
           <p class="eyebrow">New account</p>
           <h1>Create your RML profile.</h1>
           <div class="auth-card">
-            <form>
+            <form data-signup-form>
               <label>Full Name <input type="text" name="fullname" placeholder="Your full name"></label>
               <label>Email <input type="email" name="email" placeholder="you@example.com"></label>
               <label>Username <input type="text" name="username" placeholder="Choose username"></label>
               <label>Password <input type="password" name="password" placeholder="Create password"></label>
+              <label class="terms-check"><input type="checkbox" name="terms" required> <span>I agree to the RML Barbershop terms and conditions.</span></label>
               <button type="submit" class="button button-primary">Sign Up</button>
             </form>
+            <p class="form-message" data-signup-message></p>
             <div class="auth-links">
               <a href="login.html">Already have an account?</a>
             </div>

@@ -92,6 +92,34 @@ function setupLogin() {
   });
 }
 
+function setupSignup() {
+  const signupForm = document.querySelector('[data-signup-form]');
+  const signupMessage = document.querySelector('[data-signup-message]');
+
+  if (!signupForm) {
+    return;
+  }
+
+  signupForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(signupForm);
+
+    if (formData.get('terms') !== 'on') {
+      if (signupMessage) {
+        signupMessage.textContent = 'Please agree to the terms and conditions before creating an account.';
+      }
+      return;
+    }
+
+    if (signupMessage) {
+      signupMessage.textContent = 'Account details accepted. You can now proceed to log in.';
+    }
+
+    signupForm.reset();
+  });
+}
+
 function setupLogout() {
   document.querySelectorAll('[data-logout]').forEach((link) => {
     link.addEventListener('click', () => {
@@ -112,4 +140,5 @@ if (themeToggle) {
 
 setupServiceTabs();
 setupLogin();
+setupSignup();
 setupLogout();

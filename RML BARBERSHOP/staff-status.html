@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Staff Status - RML Barbershop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
@@ -21,6 +24,11 @@
           <div class="card"><h2>Available</h2><p>Current staff availability.</p></div>
           <div class="card"><h2>0 Waiting</h2><p>Customers waiting for service.</p></div>
           <div class="card"><h2>0 Active</h2><p>Services currently in progress.</p></div>
+        </div>
+        <div class="queue-list">
+          <div class="queue-item"><strong class="queue-time">09:00</strong><span>Waiting list opens</span><strong class="status-pill">Ready</strong></div>
+          <div class="queue-item"><strong class="queue-time">Now</strong><span>No active customer in the chair</span><strong class="status-pill">Available</strong></div>
+          <div class="queue-item"><strong class="queue-time">Close</strong><span>Update final queue before end of shift</span><strong class="status-pill">Pending</strong></div>
         </div>
       </section>
     </main>
